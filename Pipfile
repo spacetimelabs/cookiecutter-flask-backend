@@ -1,0 +1,31 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+ipdb = "*"
+pytest = "*"
+pytest-flask = "*"
+pytest-mock = "*"
+mock = "*"
+factory-boy = "*"
+Faker = "*"
+
+[packages]
+psycopg2 = "*"
+flask-shell-ipython = "*"
+python-dotenv = "*"
+Flask = "*"
+Flask-Admin = "*"
+Flask-Cors = "*"
+Flask-DebugToolbar = "*"
+SQLAlchemy = "*"
+SQLAlchemy-serializer = "*"
+Flask-SQLAlchemy = "*"
+Flask-Migrate = "*"
+
+[requires]
+python_version = "{{ python_version }}"
