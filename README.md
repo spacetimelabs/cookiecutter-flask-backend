@@ -71,6 +71,13 @@ docker-compose up --build -d
 
 ```
 
+Install the libpq-dev library if you don't have it. In Linux Mint, the command to install the library will look like this:
+
+```sh
+apt-get install libpq-dev        
+
+```
+
 Install the project's dependencies. It's better use a [Virtualenv](https://virtualenv.pypa.io/en/latest/)
 
 ```sh
