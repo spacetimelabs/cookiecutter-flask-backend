@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+
+  postgres:
+    image: postgres:{{cookiecutter.postgresql_version}}
+    container_name: {{cookiecutter.project_slug}}_db
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+    volumes:
+      - ./postgresql_data:/var/lib/postgresql/data
+      - ./scripts:/scripts
+    environment:
+      POSTGRES_USER: {{cookiecutter.project_slug}}
+      POSTGRES_PASSWORD: {{cookiecutter.project_slug}}2020
+      POSTGRES_DB: {{cookiecutter.project_slug}}
