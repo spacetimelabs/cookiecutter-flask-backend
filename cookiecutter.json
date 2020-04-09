@@ -1,6 +1,7 @@
 {
     "project_name": "My Awesome Project",
     "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "python_version": ["3.8", "3.7", "3.6", "3.5"],
     "author_name": "Roger Camargo",
     "domain_name": "example.com",
     "postgresql_version": [
